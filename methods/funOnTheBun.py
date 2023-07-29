@@ -30,7 +30,7 @@ def drawAnimation(stdscr, width, height):
 
 			# show animation 'frame'
 			y=0
-			animationX = (width/2) - (len(frameLines[0])/2)
+			animationX = int((width/2) - (len(frameLines[0])/2))
 
 			for line in frameLines:
 				stdscr.addstr(y,animationX,line)
